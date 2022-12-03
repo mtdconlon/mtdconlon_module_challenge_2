@@ -2,22 +2,155 @@
   box-sizing: border-box;
 }
 
+:root {
+  --header-colour: #92cccd;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: #edeef6;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+/*header style*/
+.header {
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #32343d;
+  color: #32343d
+  ;
+}
+/*header h1 style*/
+.header h1 {
+  display: inline-block;
+  font-size: 48px;
+  background-color: var(--header-colour)
+}
+
+/*header nav style(formerly div)*/
+.header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+.header nav a {
+  color: var(--header-colour);
+  text-decoration-line: underline;
+  text-decoration-thickness: 5px;
+}
+
+/*header nav ul style(formerly div ul)*/
+.header nav ul {
+  list-style-type: none;
+}
+/*header nav ul li style(formerly div ul li)*/
+.header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+/*hero style*/
+.hero-banner {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/02-hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-banner h2 {
+  display:inline-block;
+  background-color: var(--header-colour);
+  color: #32343d;
+  left: 81%;
+  bottom: 45.5%;
+  position: absolute;;
 }
 
 p {
   margin: 0;
+}
+
+.containerGrid {
+  display: grid;
+  margin: 60px 20px 20px;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  grid-template-areas:
+      "flexboxRow flexboxColumn cssgridLayout"
+      "linearGradients boxtransitionGlow overlaycardwithTitle";
+}
+
+.containerGrid h2 {
+  font-size: 20px;
+  color: var(--headingcolor);
+  padding-left: 10px;
+  text-align: start;
+  margin: 10px;
+  border: 1px solid white;
+  border-radius: 6px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.containerGrid p {
+  color: var(--headingcolor);
+  padding-left: 6px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 12px;
+}
+
+code {
+  color: #f1f1f3;
+  display: flex;
+  padding-left: 30px;
+  background: linear-gradient(0deg, rgba(159, 84, 165, 1) 0%, rgba(75, 64, 86, 1) 100%);
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+  line-height: 19px;
+  margin: 10px;
+}
+
+.flexboxRow {
+  grid-area: flexboxRow;
+  height: 200px;
+  border: 1.5px dashed white;
+}
+
+.flexboxColumn {
+  grid-area: flexboxColumn;
+  height: 200px;
+  border: 1.5px dashed white;
+}
+
+.cssgridLayout {
+  grid-area: cssgridLayout;
+  height: 200px;
+  border: 1.5px dashed white;
+}
+
+.linearGradients {
+  grid-area: linearGradients;
+  height: 200px;
+  border: 1.5px dashed white;
+}
+
+.boxtransitionGlow {
+  grid-area: boxtransitionGlow;
+  height: 200px;
+  border: 1.5px dashed white;
+}
+
+.overlaycardwithTitle {
+  grid-area: overlaycardwithTitle;
+  height: 200px;
+  border: 1.5px dashed white;
 }
