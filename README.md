@@ -29,7 +29,7 @@ A portfolio of work can showcase your skills and talents to employers looking to
 Full Size Webpage Screenshot
 ![example image](/images/fullsize_webpage_screenshot.png)
 
-Full Size Webpage Screenshot
+Mobile Size Webpage Screenshot
 ![example image](/images/mobile_size_webpage.png)
 
 ## License
