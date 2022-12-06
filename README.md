@@ -20,7 +20,7 @@ A portfolio of work can showcase your skills and talents to employers looking to
 
 ## Deployment Links
 **Submission URL**
-- https://mtdconlon.github.io/mtdconlon_module_challenge_1/
+- https://mtdconlon.github.io/mtdconlon_module_challenge_2/
 
 **GitHub Repo URL**
 - https://github.com/mtdconlon/mtdconlon_module_challenge_2
